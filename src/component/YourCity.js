@@ -63,7 +63,7 @@ const CityWeather = () => {
     const fetchWeatherData = async () => {
         try {
             const response = await axios.get(
-                `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9738126f79522958fc1b46109ca99d73`
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9738126f79522958fc1b46109ca99d73`
             );
             const data = response.data;
             const weatherDetails = {
