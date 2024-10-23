@@ -86,9 +86,9 @@ const App = () => {
                 const response = await axios.get('https://weather-summary.vercel.app/weather/summaries');
                 const { averageTemp, maxTemp, minTemp, dominantCondition, records } = response.data.data[0];
                 setRecord(records);
-                setSummary( setSummary(
+                 setSummary(
           response?.data?.data[0]?.records[0]
-        ););
+        )
             } catch (error) {
                 console.error('Error fetching weather summary:', error);
             }
